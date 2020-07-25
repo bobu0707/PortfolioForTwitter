@@ -1,0 +1,426 @@
+*{
+  letter-spacing: 0.1em;
+  margin: 0;
+  padding: 0;
+}
+/* 全体要素 css */
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background: whitesmoke;
+  font-family: "Helvetica Neue",
+  Arial,
+  "Hiragino Kaku Gothic ProN",
+  "Hiragino Sans",
+  Meiryo,
+  sans-serif;
+}
+#main{
+  margin: 0 10%;
+}
+h2{
+  margin-top: 16px;
+  margin-bottom: 16px;
+  position: relative;
+  display: inline-block;
+}
+h2::after{
+  position: absolute;
+  top: 20px;
+  left: 0;
+  z-index: -1;
+  content: "";
+  display: block;
+  height: 8px;
+  width: 100%;
+  background-color: orange;
+  transform: rotate(1deg);
+}
+h3{
+  font-size: 16px;
+}
+section{
+  padding-top: 50px;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  opacity: 0.7;
+}
+.flex{
+  display: flex;
+}
+.fixed{
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.margin-top{
+  margin-top: 50px !important;
+}
+/* 背景 css */
+.orange{
+  padding: 16px 0;
+  position: relative;
+  overflow: hidden;
+}
+.orange::after{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background-color: orange;
+  transform: rotate(1deg);
+  width: 105%;
+  left: -8px;
+  z-index: -1;
+}
+.blue{
+  padding: 16px 8px;
+  position: relative;
+  overflow: hidden;
+}
+.blue::after{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background-color: lightseagreen;
+  transform: rotate(-1deg);
+  width: 105%;
+  left: -8px;
+  z-index: -2;
+}
+.name-bg::after{
+  top: 0;
+  height: 95%;
+}
+.about-bg::after{
+  top: 0;
+  height: 95%;
+}
+.skill-bg::after{
+  top: 16px;
+  height: 93%;
+}
+.career-bg-1::after{
+  top: 16px;
+  height: 85%;
+}
+.career-bg-2::after{
+  top: 16px;
+  height: 84%;
+}
+.contact-bg::after{
+  top: 16px;
+  height: 94%;
+}
+/* animation */
+.slide-left-on{
+  animation: fadeIn 1s forwards,
+  slideIn-left 0.5s;
+}
+.slide-right-on{
+  animation: fadeIn 1s forwards,
+  slideIn-right 0.5s;
+}
+.fadeIn-on{
+  animation: fadeIn 1s forwards;
+}
+
+/* メンテナンス用css */
+.bd{
+  border: 1px solid #000;
+}
+
+/* header */
+header{
+  background: lightseagreen;
+  height: 80px;
+  width: 100%;
+  text-align: center;
+}
+h1{
+  font-weight: bold;
+  color: white;
+  animation: fadeIn 2s;
+}
+/* nav */
+#nav{
+  background: darkgray;
+  height: 50px;
+}
+#nav ul{
+  display: flex;
+  height: 100%;
+}
+#nav li{
+  box-sizing: border-box;
+  margin: auto;
+  flex-grow: 1;
+  text-align: center;
+  line-height: 14px;
+  padding-top: 8px;
+}
+#nav li:hover{
+  background-color: gray;
+}
+#nav img{
+  height: 24px;
+  width: auto;
+}
+#nav a{
+  text-decoration: none;
+  color: black;
+}
+
+/* profile */
+#profile{
+  align-items: center;
+  font-weight: bold;
+}
+#profile-name{
+  width: 100%;
+  flex-direction: column;
+}
+#profile-name p{
+  font-size: 14px;
+  text-align: left;
+}
+#profile li{
+  font-size: 14px;
+  text-indent: 2em;
+}
+/* profile-img */
+#profile-img{
+  margin-top: -200px;
+  width: 50%;
+  position: relative;
+  left: 50%;
+}
+#profile img{
+  width: 100%;
+  height: auto;
+  border-radius: 100%;
+  margin-bottom: 24px;
+}
+/* profile-about */
+#profile-about p{
+ font-size: 14px;
+ word-wrap: normal; 
+ text-indent: 1em;
+ letter-spacing: 0.2em;
+}
+
+/* skill */
+#skill{
+  font-weight: bold;
+}
+#skill img{
+  width: 80%;
+  height: auto;
+  background-color: white;
+}
+.skill-item{
+  text-align: center;
+  width: 100px;
+}
+#skillbox1,
+#skillbox2{
+  justify-content: space-around;
+  margin-top: 16px;
+  flex-grow: 1;
+}
+
+/* career */
+#career{
+  font-weight: bold;
+}
+#career h4{
+  padding-left: 1em;
+}
+#career p{
+  padding-left: 2em;
+  font-size: 14px;
+}
+.indent{
+  padding-left: 0;
+}
+.career-item{
+  box-sizing: border-box;
+  padding: 24px 8px;
+}
+
+/* work */
+.card{
+  width: 100%;
+  flex-direction: column;
+  border: 1px solid #000;
+}
+.scroll{
+  max-height: 300px;
+  overflow-y: scroll;
+  border-bottom: 1px solid #000;
+  margin-bottom: 16px;
+}
+.scroll img{
+  width: 100%;
+}
+.card-link{
+  margin-top: 8px;
+  text-align: center;
+}
+.card-link img{
+  width: 10%;
+}
+.link-bg{
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 24px;
+  background-color: #222423;
+  margin: 0 auto;
+  padding-top: 6px;
+}
+
+/* contact */
+#form-box{
+  padding-bottom: 36px;
+}
+#contact input{
+  margin-top: 24px;
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 4px;
+  box-sizing: border-box;
+}
+#contact input:focus{
+  outline: 0;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+textarea{
+  margin-top: 16px;
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 4px;
+  box-sizing: border-box;
+}
+textarea:focus{
+  outline: 0;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.radio-box{
+  margin-top: 16px;
+  font-size: 14px;
+}
+.radio-box input{
+  width: auto !important;
+  margin-top: 0 !important;
+}
+#submit:hover{
+  background-color: gray;
+}
+#thxMessage{
+  padding: 150px;
+}
+
+/* footer */
+footer{
+  margin-top: 32px;
+  background: lightseagreen;
+  height: 48px;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+}
+#foot-link{
+  justify-content: space-around;
+}
+#foot-link a{
+  color: white;
+}
+#foot-link img{
+  width: 20px;
+  height: auto;
+  vertical-align: bottom;
+}
+
+/* アニメーション */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slideIn-left {
+  0% {
+    transform: translate(-100%);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+@keyframes slideIn-right {
+  0% {
+    transform: translate(100%);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+/* PC CSS */
+@media screen and (min-width:480px){
+  #profile h3{
+    margin-left: 8%;
+  }
+  #profile-name p{
+    margin-left: 10%;
+    font-size: 18px;
+  }
+  #profile-about p{
+    margin-left: 2%;
+    font-size: 16px;
+  }
+  #profile li{
+    margin-left: 10%;
+    font-size: 16px;
+  }
+  #profile-img{
+    margin-top: -248px;
+  }
+  #profile img{
+  width: 80%;
+  max-width: 250px;
+  }
+  #skill .container{
+  display: flex;
+  flex-grow: 1;
+  padding-bottom: 24px;
+  } 
+  .skill-bg::after{
+    height: 85%;
+  }
+  .card{
+    width: 50%;
+  }
+  form{
+    width: 80%;
+    margin-left: 10%;
+  }
+  #foot-link a{
+    font-size: 110%;
+  }
+}

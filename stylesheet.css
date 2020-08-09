@@ -319,6 +319,8 @@ h1 {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 32px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #profile-name {

@@ -14,6 +14,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="bobuのポートフォリオです。ホームページ制作等行っております。">
+  <meta name="keyword" content="portfolio,ぼぶ,bobu,ボブ,twitter">
   <title>Bobu's Portfolio</title>
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <!-- jquery -->
@@ -25,7 +26,7 @@
 <body>
   <!-- Header -->
   <header id="top">
-    <h1 class="text-center">BOBU<br>Portfolio</h1>
+    <h1>BOBU's<br>Portfolio</h1>
   </header>
   <!-- Main nav -->
   <div id="nav">
@@ -50,10 +51,10 @@
   <!-- Main content -->
   <div id="main">
     <section id="profile">
+      <!-- My name -->
       <h2 class="slide-left-on">ぼぶ</h2>
-      <div id="profile-name" class="flex">
-        <!-- My name -->
-        <div class="blue name-bg slide-right-on">
+      <div id="profile-top" class="blue name-bg slide-right-on">
+        <div id="profile-name">
           <h3>座右の銘 : </h3>
           <ul>
             <li>生涯学習</li>
@@ -93,8 +94,7 @@
     <section id="skill">
       <h2 class="slide-left">skill</h2>
       <div class="container blue skill-bg slide-right">
-        <!-- skill 1段目 -->
-        <div id="skillbox1" class="flex">
+        <div id="skillbox">
           <div class="skill-item">
             <p>HTML<p>
             <img src="image/html.png" alt="html">
@@ -107,9 +107,6 @@
             <p>BootStrap</p>
             <img src="image/BootStrap.png" alt="bootstrap">
           </div>
-        </div>
-        <!-- skill 2段目 -->
-        <div id="skillbox2" class="flex">
           <div class="skill-item">
             <p>JavaScript</p>
             <img src="image/JavaScript.png" alt="javascript">
@@ -122,6 +119,10 @@
             <p>GitHub</p>
             <img src="image/GitHub.png" alt="GitHub">
           </div>
+          <div class="skill-item">
+            <p>Sass</p>
+            <img src="image/sass.png" alt="Sass">
+          </div>
         </div>
       </span>
     </section>
@@ -132,18 +133,21 @@
       <ul>
         <div class="orange career-bg-1 career-item slide-left">
           <li><h3>営業:木工用刃物のメーカー営業。</h3></li>
-            <p>岡山広島エリアの既存顧客へのルート営業を行う。担当顧客は代理店14社、ユーザー約100社を担当。</p>
+            <p>既存顧客へのルート営業を行う。担当は広島岡山エリア。</p>
+            <p>顧客は代理店14社、ユーザー約100社を担当。</p>
             <p>関わりが薄くなってしまっている顧客への関係の再構築に尽力中。</p>
         </div>
         <div class="blue career-bg-2 career-item slide-right">
           <li><h3>製造業:電車の製造。</h3></li>
-            <p>大手電車メーカーの部品工場のアルミ加工班へ技術派遣として配属。電車の外装部品の機械加工、仕上げ工程を担当。</p>
-            <p>技術の共有化や作業の簡易化を提案し4時間かかっていた部品を1.5時間で加工できるように作業の効率化に成功。</p>
+            <p>電車メーカー部品工場のアルミ加工班へ技術派遣で配属。</p>
+            <p>外装部品の機械加工、仕上げ工程を担当。</p>
+            <p>技術の共有化や作業の簡易化を提案し、4時間かかっていた部品を1.5時間で加工できるように作業の効率化に成功。</p>
         </div>
         <div class="orange career-bg-1 career-item slide-left">
           <li><h3>倉庫業:現場管理リーダー。</h3></li>
-            <p>仕事内容は独自の管理ソフトを使用した出荷や在庫管理と約20名のパートへの作業指示と教育、マニュアル作成。</p>
-            <p>主な顧客はEC事業を行うネットショップやBtoBを行う商社。商材はアパレル、雑貨小物、靴、スノーウェア、インテリア家具、知育玩具。</p>
+            <p>社内開発の管理ソフトを使用して商品管理。約20名のパートへの作業指示と教育、マニュアル作成。</p>
+            <p>主な顧客はネットショップやBtoBの商社。</p>
+            <p>商材はアパレル、雑貨小物、靴、スノーウェア、インテリア家具、知育玩具。</p>
         </div>
         <div class="blue career-bg-2 career-item slide-right">
           <li><h3>経営情報学部経営情報学科:中途退学</h3></li>
@@ -156,18 +160,39 @@
     <!-- work -->
     <section id="work">
       <h2 class="slide-left">作成物</h2>
-      <div class="card-box flex fadeIn">
+      <div class="card-box fadeIn">
         <div class="card">
           <div class="scroll">
             <a href="image/acidman.png" data-lightbox="work" data-title="acidman">
               <img src="image/acidman.png" alt="acidman_site">
             </a>
           </div>
-          <p>アーティスト「ACIDMAN」の模写サイトです。オリジナル要素でディスプレイ幅が480px以下の場合、レスポンシブ表示されるされるようにしました。</p>
-          <div class="card-link">
-            <a class="link-bg" href="https://nobu6326.github.io/acidmanCopy/" target="_blank">link</a>
-            <p><a href="https://github.com/nobu6326/acidmanCopy" target="_blank"><img src="image/GitHub.png" alt="GitHubへのリンク"></a></p>
+          <div class="scroll">
+            <p>アーティスト「ACIDMAN」の模写サイトです。オリジナル要素でディスプレイ幅が480px以下の場合、レスポンシブ表示されるされるようにしました。</p>
+            <p>制作期間は約5日です。</p>
           </div>
+          <div class="card-link">
+            <a class="link-bg" href="https://bobu0707.github.io/acidmanCopy/" target="_blank">link</a>
+            <p><a href="https://github.com/bobu0707/acidmanCopy" target="_blank"><img src="image/GitHub.png" alt="GitHubへのリンク"></a></p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="scroll">
+            <a href="image/starbear.png" data-lightbox="work" data-title="starbear">
+              <img src="image/starbear.png" alt="starbear_site">
+            </a>
+          </div>
+          <div class="scroll">
+            <p>ゲーム実況Youtuberのサイトです。TwitterやYoutubeのサムネは提供があったものです。</p>
+            <p>黄色と黒のカラーでアウトローな大人の危険な雰囲気をイメージしました。</p>
+            <p>PC用、スマホ横持ち(1024px-481px)、スマホ縦持ち(480px以下)で画面表示が切り替わります。</p>
+            <p>制作期間は約3日です。</p>
+          </div>
+          <div class="card-link">
+            <a class="link-bg" href="https://bobu0707.github.io/starbear" target="_blank">link</a>
+            <p><a href="https://github.com/bobu0707/starbear" target="_blank"><img src="image/GitHub.png"
+                  alt="GitHubへのリンク"></a></p>
+          </div>      
         </div>
       </div>
     </section>
@@ -178,17 +203,17 @@
       <div id="form-box" class="blue contact-bg slide-right">
           <!-- googlefrom 使用 -->
           <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSegEuZUE4UMxZ7RWTCIN4jDJE8dOc1weE2ajwbQpu0wIoDYOA/formResponse" name="myForm" method="post" target="dummyIframe">
-            <input id="in_name" class="form-control" type="text" name="entry.1884265043" placeholder="Name" required>
-            <input id="in_company" class="form-control" type="text" name="entry.1016896215" placeholder="Company Name">
-            <input id="in_mail" class="form-control" type="email" name="emailAddress" placeholder="Email" required>
-            <input id="in_tel" class="form-control" type="number" name="entry.1835445830" placeholder="Phone number" required>
+            <input id="in_name" type="text" name="entry.1884265043" placeholder="Name" required>
+            <input id="in_company" type="text" name="entry.1016896215" placeholder="Company Name">
+            <input id="in_mail" type="email" name="emailAddress" placeholder="Email" required>
+            <input id="in_tel" type="number" name="entry.1835445830" placeholder="Phone number" required>
             <div class="radio-box">
               <p>お問い合わせの種類</p>
               <label><input type="radio" name="entry.995739299" value="お仕事の依頼" checked>お仕事の依頼</label>
               <label><input type="radio" name="entry.995739299" value="採用関係">採用関係</label>
               <label><input type="radio" name="entry.995739299" value="その他">その他</label>
             </div>
-            <textarea id="comment" class="form-control" name="entry.513669972" placeholder="お問い合わせ内容" rows="5" required></textarea>
+            <textarea id="comment" name="entry.513669972" placeholder="お問い合わせ内容" rows="5" required></textarea>
             <iframe name="dummyIframe" style="display:none;"></iframe>
             <input id="submit" type="button" value="送信" onclick="submitForm()">
               <p>※GitHubPagesで公開しておりますのでお問い合わせフォームが現在、正常に動作しておりません。</p>
@@ -211,12 +236,12 @@
 <!-- footer -->
   <footer>
   <div id="end" class="container">
-    <div id="foot-link" class="flex">
+    <div id="foot-link">
       <a href="https://twitter.com/bobu_6326" id="twittr" target="_blank"><img src="image/Twitter_Logo_WhiteOnBlue.png" height=24 width=24> Twitter</a>
       <a href="https://bobutaro.hatenablog.com/" target="_blank"><img src="image/hatenablog-logo.svg" alt="はてなブログ">個人blog</a>
       <a href="https://harapecco.com/" target="_blank"><img src="image/WordPress-logo.png" alt="WordPress">夫婦blog</a>
     </div>
-    <small>&copy; 2020 bobu</small>
+    <small>2020 &copy; bobu</small>
   </div>
   </footer>
   
@@ -224,7 +249,7 @@
     // メニューバー固定
     $(function(){
       $(window).scroll(function(){
-        if($(this).scrollTop() > 80){
+        if($(this).scrollTop() > 96){
           $("#nav").addClass("fixed");
           $("#main").addClass("margin-top");
         }else{
@@ -242,7 +267,7 @@
           let elemPos = $(this).offset().top;
           let scroll = $(window).scrollTop();
           let windowHeight = $(window).height();
-          if(scroll > elemPos - windowHeight + 150){
+          if(scroll > elemPos - windowHeight + 100){
             $(this).addClass("slide-left-on");
           }
         });

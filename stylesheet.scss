@@ -145,12 +145,12 @@ html{
   z-index: -2;
 }
 .name-bg::after{
-  top: 0;
-  height: 95%;
+  top: 8px;
+  height: 91%;
 }
 .about-bg::after{
-  top: 0;
-  height: 95%;
+  top: 8px;
+  height: 92%;
 }
 .skill-bg::after{
   top: 16px;
@@ -158,11 +158,11 @@ html{
 }
 .career-bg-1::after{
   top: 16px;
-  height: 85%;
+  height: 87%;
 }
 .career-bg-2::after{
   top: 16px;
-  height: 84%;
+  height: 87%;
 }
 .contact-bg::after{
   top: 16px;
@@ -194,7 +194,7 @@ body{
 #main{
   margin: 0 10%;
   letter-spacing: 3px;
-  line-height: 28px;
+  line-height: 32px;
 }
 h2{
   position: relative;
@@ -291,6 +291,7 @@ h1{
 #profile-top{
   width: 100%;
   flex-direction: column;
+  margin-bottom: 32px;
 }
 // profile-name
 #profile-name{
@@ -308,8 +309,8 @@ h1{
 /* profile-img */
 #profile-img{
   position: absolute;
-  width: 40%;
-  top: 240px;
+  width: 45%;
+  top: 16px;
   left: 50%;
   img{
     width: 100%;
@@ -420,7 +421,7 @@ h1{
     height: 24px;
     background-color: $link;
     margin: 0 auto;
-    padding-top: 6px;
+    padding-bottom: 4px;
   }
 }
 
@@ -539,9 +540,15 @@ small{
     max-width: 250px;
     }
   }
-  #profile-top p{
-    margin-left: 10%;
-    font-size: 18px;
+  #profile-name{
+    margin-top: 16px;
+  }
+  #profile-top{
+    height: 272px;
+    p{
+      margin-left: 10%;
+      font-size: 18px;
+    }
   }
   #profile-about p{
     margin-left: 2%;
@@ -550,13 +557,18 @@ small{
   #profile-img{
     left: 50%;
   }
+  .name-bg::after{
+    top: 8px;
+    height: 94%;
+  }
   #skill .container{
   display: flex;
   flex-grow: 1;
   padding-bottom: 24px;
   } 
   .skill-bg::after{
-    height: 85%;
+  top: 16px;
+  height: 91%;
   }
   #career{
     li{
@@ -567,12 +579,17 @@ small{
       margin-left: 2%;
     }
   }
-  .card{
-    width: 49%;
-  }
-  .scroll{
-    a{
-      opacity: 1;
+  #work{
+    .card{
+      width: 49%;
+    }
+    .scroll{
+      a{
+        opacity: 1;
+      }
+    }
+    .card-link{
+      height: 72px;
     }
   }
   form{
@@ -586,8 +603,53 @@ small{
 @media screen and (min-width: 1024px){
   #profile{
     img{
-      max-width: 250px;
-      left: 65%;
+      position: absolute;
+      top: 16px;
+      left: 25%;
+      max-width: 300px;
+    }
+  }
+  #profile-top{
+    height: 368px;
+  }
+  #profile-name{
+    position: relative;
+    top: 16px;
+    height: 368px;
+    line-height: 36px;
+    h3{
+      font-size: 24px;
+    }
+    li{
+      font-size: 18px;
+    }
+  }
+  .about-bg{
+    padding: 24px;
+    &::after{
+      height: 86%;
+    }
+  }
+  .skill-bg::after{
+    height: 82%;
+  }
+  #career{
+    h3{
+      font-size: 20px;
+    }
+    p{
+      font-size: 16px;
+    }
+  }
+  .career-bg-1{
+    padding-top: 20px;
+  }
+  .career-bg-2{
+    padding-top: 32px;
+  }
+  #work{
+    .card-link{
+      height: 96px;
     }
   }
 }

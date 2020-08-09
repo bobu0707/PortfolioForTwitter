@@ -567,6 +567,10 @@ footer {
   color: whitesmoke;
 }
 
+#foot-link a:hover {
+  color: #222423;
+}
+
 #foot-link img {
   width: 20px;
   height: auto;
@@ -656,7 +660,7 @@ small {
     margin-top: 16px;
   }
   #profile-top {
-    height: 272px;
+    height: 304px;
   }
   #profile-top p {
     margin-left: 10%;
@@ -750,9 +754,11 @@ small {
   }
   .career-bg-1 {
     padding-top: 20px;
+    padding-left: 20px;
   }
   .career-bg-2 {
     padding-top: 32px;
+    padding-left: 20px;
   }
   #work .card-link {
     height: 96px;

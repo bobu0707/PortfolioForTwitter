@@ -489,6 +489,9 @@ footer{
   margin-bottom: 8px;
   a{
     color: $back_ground;
+    &:hover{
+      color: $link;
+    }
   }
   img{
     width: 20px;
@@ -545,7 +548,7 @@ small{
     margin-top: 16px;
   }
   #profile-top{
-    height: 272px;
+    height: 304px;
     p{
       margin-left: 10%;
       font-size: 18px;
@@ -644,9 +647,11 @@ small{
   }
   .career-bg-1{
     padding-top: 20px;
+    padding-left: 20px;
   }
   .career-bg-2{
     padding-top: 32px;
+    padding-left: 20px;
   }
   #work{
     .card-link{

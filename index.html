@@ -26,7 +26,9 @@
 <body>
   <!-- Header -->
   <header id="top">
-    <h1>BOBU's<br>Portfolio</h1>
+    <div>
+      <h1>BOBU's<br>Portfolio</h1>
+    </div>
   </header>
   <!-- Main nav -->
   <div id="nav">
@@ -222,7 +224,7 @@
           <button id="submit" onclick="submitForm()">送信</button>
         </form>
         <div id="thxMessage" class="hide">
-          <h4>お問い合わせ頂き、ありがとうございます。<br>2-3営業日中にご回答いたします。</h4>
+          <h4>お問い合わせ頂き、ありがとうございます。<br>1-2日中にご回答いたします。</h4>
         </div>
       </div>
     </section>
@@ -244,7 +246,7 @@
     // メニューバー固定
     $(function(){
       $(window).scroll(function(){
-        if($(this).scrollTop() > 96){
+        if($(this).scrollTop() > 360){
           $("#nav").addClass("fixed");
           $("#main").addClass("margin-top");
         }else{

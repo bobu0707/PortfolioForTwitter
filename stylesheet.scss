@@ -175,13 +175,9 @@ html{
   top: 16px;
   height: 93%;
 }
-.career-bg-1::after{
-  top: 16px;
-  height: 87%;
-}
-.career-bg-2::after{
-  top: 16px;
-  height: 87%;
+.career-bg::after{
+  top: 8px;
+  height: 82%;
 }
 .contact-bg::after{
   top: 16px;
@@ -394,9 +390,7 @@ h1{
 /* career */
 #career{
   font-weight: bold;
-  h4{
-    padding-left: 1em;
-  }
+
   p{
     padding-left: 2em;
     font-size: 14px;
@@ -404,13 +398,7 @@ h1{
     text-indent: -1em;
   }
 }
-.indent{
-  padding-left: 0;
-}
-.career-item{
-  box-sizing: border-box;
-  padding: 24px 8px;
-}
+
 
 /* work */
 .card-box{
